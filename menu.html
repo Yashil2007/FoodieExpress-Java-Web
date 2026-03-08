@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Order</title>
+</head>
+
+<body>
+
+<h2>Order Food</h2>
+
+<form action="OrderServlet" method="post">
+
+<label>Select Restaurant:</label>
+<select name="restaurant">
+<option value="Dominos">Dominos</option>
+<option value="McDonalds">McDonalds</option>
+<option value="KFC">KFC</option>
+</select>
+
+<br><br>
+
+<label>Select Food:</label>
+<select name="food">
+<option value="Pizza">Pizza - 200</option>
+<option value="Burger">Burger - 120</option>
+<option value="Pasta">Pasta - 180</option>
+</select>
+
+<br><br>
+
+<label>Quantity:</label>
+<input type="number" name="quantity" min="1" max="5">
+
+<br><br>
+
+<label>Payment Mode:</label>
+
+<input type="radio" name="payment" value="Cash">Cash on Delivery
+<input type="radio" name="payment" value="UPI">UPI
+<input type="radio" name="payment" value="Card">Card
+
+<br><br>
+
+<input type="submit" value="Order Food">
+
+</form>
+
+</body>
+</html>
