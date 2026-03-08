@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register</title>
+    <title>Register | FoodieExpress</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 320px; text-align: center; }
+        h2 { color: #e23744; margin-bottom: 20px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        .btn { background: #e23744; color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .btn:hover { background: #c12a35; }
+        a { color: #e23744; text-decoration: none; font-size: 14px; }
+    </style>
 </head>
-
 <body>
-
-<h2>User Registration</h2>
-
-<form action="RegisterServlet" method="post">
-
-Name:
-<input type="text" name="name"><br><br>
-
-Email:
-<input type="email" name="email"><br><br>
-
-Password:
-<input type="password" name="password"><br><br>
-
-<input type="submit" value="Register">
-
-</form>
-
+    <div class="card">
+        <h2>📝 Register</h2>
+        <form action="RegisterServlet" method="post">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[6-9]{1}[0-9]{9}" title="Please enter a valid 10-digit mobile number" required>
+            <input type="password" name="password" placeholder="Create Password" required>
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+        <p style="font-size: 14px; margin-top: 15px;">
+            Already have an account? <a href="login.html">Login here</a>
+        </p>
+    </div>
 </body>
 </html>
