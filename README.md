@@ -18,10 +18,10 @@ FoodieExpress is a Java Web Application developed using Servlets, JSP, and HTML 
 FoodieExpress-Java-Web/
 │
 ├── src/
-│   ├── LoginServlet.java
+│   ├── WelcomeServlet.java
 │   ├── RegisterServlet.java
-│   ├── OrderServlet.java
-│   └── WelcomeServlet.java
+│   ├── LoginServlet.java
+│   └── OrderServlet.java
 │
 ├── web/
 │   ├── index.html
