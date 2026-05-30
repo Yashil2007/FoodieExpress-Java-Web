@@ -60,7 +60,7 @@ Before running the project, install:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/FoodieExpress-Java-Web.git
+git clone https://github.com/Yashil2007/FoodieExpress-Java-Web.git
 ```
 
 ### 2. Open Project
@@ -86,7 +86,7 @@ Deploy the generated WAR file to Tomcat.
 Open:
 
 ```
-http://localhost:8080/FoodieExpress-Java-Web
+http://localhost:8080/OnlineFoodOrder/
 ```
 
 ## Application Workflow
